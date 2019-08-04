@@ -1,2 +1,2 @@
 # Swing-Calculator
-Đây là một ứng dụng được xây dựng trên Java Swing, có chức năng tính toán đơn giản.
+This is an application built on Java Swing. Its purpose is to do simple calculations.
