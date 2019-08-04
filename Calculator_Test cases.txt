@@ -1,0 +1,94 @@
+TEST CASE:
+Number "0":
+	+ Default 0, then click 0 
+	-> Output: 0
+	+ Click 0, then click any number except 0 
+	-> Output: that number
+	+ Click 0, then click +/- button 
+	-> Output: 0
+	+ Click 0, then click 0, click +, -, *, /, then click 0 2 times
+	-> Output: BLOCKED ZERO.
+
+
+Button ".":
+	+ Default 0, then click . button, next click +, -, *, /, %, sqrt, 1/x button
+	-> Output: 0.
+	+ Click 0 then . button, then click . button many times
+	-> Output: 0.
+	+ Click 0 then . button, then click = button
+	-> Output: 0.
+	+ Click 0 then . button, click +/- button
+	-> Output: 0.
+	+ Click 0.0, then click + button, click 0.0
+	-> Output: 0
+
+Button "=":
+	+ Click 5, then +, -, *, / button, then click =
+	-> Output: 5
+	+ Click 5, then +, -, *, / button, then click 3, click =
+	-> Output: true result
+
+Button "+/-":
+	+ Click 10, then +/- many times
+	-> Output: that number
+	+ Click 10, then +/- 2 times, then +, -, *, /, click 10, then +/- many times, click =
+	-> Output: true result
+	+ Have a result, click +/-
+	-> Output: true result
+
+Button "1/x":
+	+ Click 5, then 1/x
+	-> Output: 0.2
+	+ Click 5, then click +, -, *, /, click 5, then 1/x
+	-> Output: true result
+	+ Have a result, click 1/x
+	-> Output: true result
+
+Button "%":
+	+ Click 5, then %
+	-> Output: 0.05
+	+ Click 5, then click +, -, *, /, click 5, then %
+	-> Output: true result
+	+ Have a result, click %
+	-> Output: true result
+
+Button "Sqrt":
+	+ Click 4, then sqrt
+	-> Output: 2
+	+ Click 4, then +, -, *, /, click 9, then sqrt
+	-> Output: true result
+	+ Have a result, click sqrt
+	-> Output: true result
+
+Button "MC":
+	+ Click 5, M+ or M-, then MR, then MC
+	-> Output: 0
+
+Button "MR", "M+", "M-":
+	+ Click 5, then M+ or M-, click MR, then M+ or M-, click MR
+	-> Output: 10 (M+)
+	+ Click 5, then M+ or M-, click 2, click MR
+	-> Output: 5
+	+ Click 5, then M+ or M-, click 2, click MR, then +, -, *, /, click 3, click MR, click =
+	-> Output: true result
+	+ Have a result, click M+ or M-, click MR
+	-> Output: true result
+
+Button "Reset":
+	+ Click reset, all set to beginning
+	-> All null, 0
+
+Button "Backspace":
+	+ Click 0., click backspace many times
+	-> Output: 0
+	+ Click 9999999999999999, click backspace many times
+	-> Output: 0
+	+ Click 123123123.123123, click backspace many times
+	-> Output: 0
+	+ Click -12312312.12312321, click backspace many times
+	-> Output: 0
+	+ Click 123, then +, click -123123.123123, click back space many times, click =
+	-> Output: 123
+
+
+	
